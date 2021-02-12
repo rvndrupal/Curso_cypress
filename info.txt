@@ -1,0 +1,63 @@
+Instalar node.js
+
+Install--> https://www.youtube.com/watch?v=F53rDUwiAbU
+
+1.-Estando en la carpeta > npm init
+2.-LLenar los datos que te va pidiendo
+
+3.-instalar cypress --> https://www.cypress.io/
+
+    .-   npm install cypress --save-dev
+
+    .- para actualizar paquetes   --> npm install
+
+
+
+4.-Documentación --> https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell
+
+
+5.-Iniciar--> node_modules\.bin\cypress open
+
+6.-Poca madre para correr sin el navegador.
+
+    .-  node_modules\.bin\cypress run
+
+7.-Con el navegador.
+    .-  node_modules\.bin\cypress run --headed
+
+8.-Uno especifico.
+
+    .-  node_modules\.bin\cypress run --spec "cypress\integration\examples\primero.js"
+
+9.-Cambio del navegador.
+    .-  node_modules\.bin\cypress run --browser chrome 
+
+    .-  node_modules\.bin\cypress run --spec "cypress\integration\examples\sipvi1.js"  
+
+10.-Correr en Paralelo
+.-   node_modules\.bin\cypress run --record --parallel  ->PENDIENTE
+
+
+
+Guia de comandos -->   https://docs.cypress.io/guides/guides/command-line.html#Installation
+
+
+11.- Seleccionar elementos.
+.-  https://www.youtube.com/watch?v=w56cKguv3qo
+
+
+50-1244-01    reportes
+
+
+12.-Para el tab ---https://www.npmjs.com/package/cypress-plugin-tab
+.-  npm install -D cypress-plugin-tab
+.-  require('cypress-plugin-tab')
+
+
+
+
+
+
+
+
+

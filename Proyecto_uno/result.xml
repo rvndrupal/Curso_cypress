@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.0320" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2021-01-28T06:52:52" tests="0" file="cypress\integration\examples\primero2.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Proyecto dos" timestamp="2021-01-28T06:52:52" tests="2" time="1.0320" failures="1">
+    <testcase name="Proyecto dos test_uno" time="1.0320" classname="test_uno">
+    </testcase>
+    <testcase name="Proyecto dos test_dos" time="0.0000" classname="test_dos">
+      <failure message="Timed out retrying after 4000ms: expected &apos;nopCommerce demo store&apos; to equal &apos;nopCommerce demo storee&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected 'nopCommerce demo store' to equal 'nopCommerce demo storee'
+    at Context.eval (https://demo.nopcommerce.com/__cypress/tests?p=cypress\integration\examples\primero2.js:106:16)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

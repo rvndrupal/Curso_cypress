@@ -1,0 +1,16 @@
+[
+    {
+        "user":"user.1",
+        "password": "sipvint"
+    },
+
+    {
+        "user":"user.2",
+        "password": "sipvint"
+    },
+
+    {
+        "user":"user.3",
+        "password": "sipvint"
+    }
+]
