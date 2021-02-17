@@ -12,6 +12,7 @@
     "cypress": "^6.3.0"
   },
   "devDependencies": {
+    "cypress-file-upload": "^5.0.2",
     "cypress-plugin-tab": "^1.0.5"
   }
 }

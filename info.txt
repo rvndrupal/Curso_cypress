@@ -54,6 +54,10 @@ Guia de comandos -->   https://docs.cypress.io/guides/guides/command-line.html#I
 .-  require('cypress-plugin-tab')
 
 
+13.-Fixture con csv 
+
+https://medium.com/@you54f/dynamically-generate-data-in-cypress-from-csv-xlsx-7805961eff55
+
 
 
 
