@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-20T00:45:36.148Z",
+    "end": "2021-02-20T00:45:39.650Z",
+    "duration": 3502,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "382ea835-893a-4f09-8d3c-bdf9bfd5b032",
+      "title": "",
+      "fullFile": "cypress\\integration\\demo_dos\\Combos.js",
+      "file": "cypress\\integration\\demo_dos\\Combos.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2f91669d-4e2b-4d3f-b2cf-e129f7c29c72",
+          "title": "Combo box",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test uno",
+              "fullTitle": "Combo box Test uno",
+              "timedOut": null,
+              "duration": 1822,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html');\ncy.title().should('eq', 'WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)');\ncy.get(\"#dropdowm-menu-1\").select('c#');\ncy.get(\"#dropdowm-menu-2\").select('testng').should(\"have.value\", \"testng\");\ncy.get(\"#dropdowm-menu-3\").select('jquery').contains(\"JQuery\");",
+              "err": {},
+              "uuid": "0e4536b7-d7e1-4641-b6dc-0d26307f43c8",
+              "parentUUID": "2f91669d-4e2b-4d3f-b2cf-e129f7c29c72",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0e4536b7-d7e1-4641-b6dc-0d26307f43c8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1822,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": "false",
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

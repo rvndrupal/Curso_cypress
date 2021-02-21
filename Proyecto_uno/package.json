@@ -4,15 +4,32 @@
   "description": "Proyecto uno",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "triggerAll-test-console": "npx cypress run",
+    "triggerAll-test-headed": "npx cypress run --headed",
+    "triggerAll-test-chrome": "npx cypress run --browser chrome",
+    "triggerAll-test-dashboard-complete": "npx cypress run --record --key c673313b-e5bb-43ab-bd69-182db0ad5d50",
+    "triggerAll-test-dashboard-one-test": "npx cypress run --spec cypress/integration/examples/page_object_demo.js  --record --key c673313b-e5bb-43ab-bd69-182db0ad5d50",
+    "triggerAll-test-dashboard-demo-dos": "npx cypress run --spec cypress/integration/demo_dos/*.js  --record --key c673313b-e5bb-43ab-bd69-182db0ad5d50",
+    "junit-merge-packages": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
+    "delete-junit-merge-packages": "rm -rf cypress/results/junit/results.xml",
+    "delete-all-results": "rm -rf cypress/results/* || true",
+    "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json  > mochawesome.json && npx marge mochawesome.json",
+    "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
+    "cypress-regression-pack": "npm run delete-all-results && npm run  delete-mochawesome-report && npm run triggerAll-test-dashboard-demo-dos &&  npm run mochawesome-merge",
+    "multiple-browser": "npm run triggerAll-test-dashboard-demo-dos -- --browser electron --headed &&  npm run triggerAll-test-dashboard-demo-dos -- --browser chrome --headed"
   },
   "author": "Rodrigo",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^6.3.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "cypress": "^6.5.0",
     "cypress-file-upload": "^5.0.2",
-    "cypress-plugin-tab": "^1.0.5"
+    "cypress-multi-reporters": "^1.4.0",
+    "cypress-plugin-tab": "^1.0.5",
+    "mocha": "^8.3.0",
+    "mocha-junit-reporter": "^2.0.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   }
 }

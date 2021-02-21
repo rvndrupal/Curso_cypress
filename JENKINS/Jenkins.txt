@@ -1,0 +1,10 @@
+Pasos de Parallelo.
+
+1.-Instalar jdk 11   ->   http://jdk.java.net/archive/    instalar el 11.02
+
+2.-Poner en c->programfiles 86-> crear carpeta java y descomprimir ahi.
+
+3.-Buscar Panel->System-> advanced system -> variables de entorno.
+    .-En el de abajo crear nueva variable de opcion y la imagen
+    .-En el patch tiene que tener la variable Java_home
+    .-Probar  cmd ->  java --version

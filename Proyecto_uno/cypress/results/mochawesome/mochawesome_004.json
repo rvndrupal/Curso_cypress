@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-20T00:41:35.353Z",
+    "end": "2021-02-20T00:41:40.111Z",
+    "duration": 4758,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9822e9ce-9bb9-4550-ad1d-2d770be393b2",
+      "title": "",
+      "fullFile": "cypress\\integration\\demo_dos\\check.js",
+      "file": "cypress\\integration\\demo_dos\\check.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "057fb1fe-520e-46dc-ab14-e5c00a491362",
+          "title": "Checkboxes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test uno",
+              "fullTitle": "Checkboxes Test uno",
+              "timedOut": null,
+              "duration": 1630,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html');\ncy.title().should('eq', 'WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)');\ncy.get('#checkboxes > :nth-child(1) > input').click();\ncy.get('#checkboxes > :nth-child(3) > input').should('have.value', 'option-2').click(); //validar\n//cy.get('#checkboxes > :nth-child(1)').check().should(\"be.checked\")",
+              "err": {},
+              "uuid": "deb5a704-4210-4a72-ba63-9436fbc98903",
+              "parentUUID": "057fb1fe-520e-46dc-ab14-e5c00a491362",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test dos",
+              "fullTitle": "Checkboxes Test dos",
+              "timedOut": null,
+              "duration": 555,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html');\ncy.title().should('eq', 'WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)');\ncy.get(\"input[type='checkbox']\").check([\"option-1\", \"option-2\", \"option-3\", \"option-4\"]).should(\"be.checked\"); //selecciona las cuatro de un solo jalon",
+              "err": {},
+              "uuid": "f945b075-bb51-4723-9b44-04aa706fb7b3",
+              "parentUUID": "057fb1fe-520e-46dc-ab14-e5c00a491362",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "deb5a704-4210-4a72-ba63-9436fbc98903",
+            "f945b075-bb51-4723-9b44-04aa706fb7b3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2185,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": "false",
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

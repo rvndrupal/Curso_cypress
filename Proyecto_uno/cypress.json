@@ -1,8 +1,14 @@
 {
-    "viewportWidth": 1500,
-    "viewportHeight": 900,
+  "viewportWidth": 1500,
+  "viewportHeight": 900,
+  "chromeWebSecurity": false,
+  "projectId": "5qxa2x",
 
-    
-    "chromeWebSecurity": false
-      
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  }
+  
+   
+  
 }

@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-20T00:47:19.660Z",
+    "end": "2021-02-20T00:47:42.907Z",
+    "duration": 23247,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8f8bad35-cd3d-4c9a-8ae9-4d902d039a9e",
+      "title": "",
+      "fullFile": "cypress\\integration\\demo_dos\\Custom_comans.js",
+      "file": "cypress\\integration\\demo_dos\\Custom_comans.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b9fb9c47-5a21-48dd-9a06-1604c463d11b",
+          "title": "Seleccionar Elementos de una tabla y de otros campos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Domicilio",
+              "fullTitle": "Seleccionar Elementos de una tabla y de otros campos Domicilio",
+              "timedOut": null,
+              "duration": 21407,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#id_entidad').select('Aguascalientes').should('have.value', '1');\ncy.get('#id_municipio').select('Asientos').should('have.value', '2');\ncy.get('#id_localidad').select('Adolfo Lopez Mateos').should('have.value', '2598');\ncy.get('#id_cp').should('be.visible').should('be.enabled').clear().type('07990');\ncy.get('#id_calle').should('be.visible').should('be.enabled').clear().type('Calle demo');\ncy.get('#id_numero_exterior').should('be.visible').should('be.enabled').clear().type('879');\ncy.get('#id_numero_interior').should('be.visible').should('be.enabled').clear().type('12');\ncy.wait(5000);\ncy.get('#id_salir_sipvi').should('be.visible').click({\n  force: true\n});",
+              "err": {},
+              "uuid": "27f57bd8-05ab-4e02-996a-da8054800bb4",
+              "parentUUID": "b9fb9c47-5a21-48dd-9a06-1604c463d11b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "27f57bd8-05ab-4e02-996a-da8054800bb4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21407,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": "false",
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

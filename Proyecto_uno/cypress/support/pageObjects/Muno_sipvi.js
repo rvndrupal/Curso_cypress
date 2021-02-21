@@ -1,7 +1,7 @@
 require('cypress-plugin-tab')
 class Muno_sipvi {
     Po_login(email,password){
-        cy.visit('http://10.16.3.36:8007/login'), {timeout: 60000}
+        cy.visit('http://10.16.3.36:8007/login')
         cy.title().should('eq','SIPVI | SENASICA')
         //cy.wait(6000)
 

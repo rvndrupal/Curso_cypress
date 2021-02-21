@@ -60,8 +60,50 @@ https://medium.com/@you54f/dynamically-generate-data-in-cypress-from-csv-xlsx-78
 
 
 
+14.-Dashboard panale principal.
+    .->ir a login  conectarte con github
+
+    {
+    "projectId": "5qxa2x"
+    }
+
+    node_modules\.bin\cypress run --record --key c673313b-e5bb-43ab-bd69-182db0ad5d50      //todos
+
+    node_modules\.bin\cypress run --spec cypress/integration/examples/page_object_demo.js  --record --key c673313b-e5bb-43ab-bd69-182db0ad5d50
 
 
+15.-Instalar Npx.
+    .-https://www.npmjs.com/package/npx
+
+    .-npx cypress open
+
+    .-npx cypress run --spec cypress/integration/examples/page_object_demo.js  --record --key c673313b-e5bb-43ab-bd69-182db0ad5d50
+
+    .-Crear scripts -> package.json  sona de scripts
+
+    .-Correr un Trigger .-> npm run + trigger
+
+    .-npm run triggerAll-test-chrome
 
 
+16.-Reportes muy chingon
+    .-https://docs.cypress.io/guides/tooling/reporters.html#Multiple-reporters
+    .-npm install --save-dev cypress-multi-reporters mocha-junit-reporter mocha
+    .-crear un archivo en la base llamado  reporter-config.json
+    .-configure cypress.json
 
+    .-Correr la aplicación normal
+    .-npm run triggerAll-test-dashboard-complete
+
+    .-Unir resultados-> npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml
+
+    .-npm run junit-merge-packages      //une los reportes
+    .-npm run delete-junit-merge-packages  //borra el reporte resumen
+    .-npm run delete-all-results        //borra todos los reportes
+
+
+17.-Nuevo reportes.
+    .-npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator
+    
+
+   

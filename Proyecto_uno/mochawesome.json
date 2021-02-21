@@ -1,0 +1,323 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 6,
+    "passes": 5,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-02-19T23:54:20.395Z",
+    "end": "2021-02-19T23:55:13.254Z",
+    "duration": 32211,
+    "testsRegistered": 6,
+    "passPercent": 83.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "27243ec5-0d66-4eb5-8202-4eb147516a3f",
+      "title": "",
+      "fullFile": "cypress\\integration\\demo_dos\\Combo_autocomplite.js",
+      "file": "cypress\\integration\\demo_dos\\Combo_autocomplite.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "93e3da31-44bd-4ca4-8d69-9723bc792b78",
+          "title": "Combo autocomplite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test uno",
+              "fullTitle": "Combo autocomplite Test uno",
+              "timedOut": null,
+              "duration": 2295,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.webdriveruniversity.com/Autocomplete-TextField/autocomplete-textfield.html');\ncy.title().should('eq', 'WebDriver | Contact Us');\ncy.get(\"#myInput\").type(\"A\");\ncy.get(\"#myInputautocomplete-list > * \").each(function ($el, index, $list) {\n  var prod = $el.text();\n  cy.log(prod);\n  if (prod === \"Avacado\") {\n    cy.get(\"#submit-button\").click();\n    cy.wait(1000);\n  }\n});",
+              "err": {},
+              "uuid": "1f1f7abd-9820-4d76-bcb1-fb76701a7c96",
+              "parentUUID": "93e3da31-44bd-4ca4-8d69-9723bc792b78",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test dos",
+              "fullTitle": "Combo autocomplite Test dos",
+              "timedOut": null,
+              "duration": 4598,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.webdriveruniversity.com/Autocomplete-TextField/autocomplete-textfield.html');\ncy.title().should('eq', 'WebDriver | Contact Us');\ncy.get(\"#myInput\").type(\"Avacado\");\ncy.wait(1000);\ncy.get(\"#submit-button\").click();\ncy.url().should('include', 'Avacado').then(function () {\n  cy.get(\"#myInput\").type(\"Carrots\");\n  cy.wait(1000);\n  cy.get(\"#submit-button\").click();\n  cy.url().should('include', 'Carrots');\n});",
+              "err": {},
+              "uuid": "b93b2087-770e-4947-9efd-686b4259ac64",
+              "parentUUID": "93e3da31-44bd-4ca4-8d69-9723bc792b78",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1f1f7abd-9820-4d76-bcb1-fb76701a7c96",
+            "b93b2087-770e-4947-9efd-686b4259ac64"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6893,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0962edb2-6c6c-402e-a998-9c45eebae67a",
+      "title": "",
+      "fullFile": "cypress\\integration\\demo_dos\\Combos.js",
+      "file": "cypress\\integration\\demo_dos\\Combos.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7caa6071-7910-4a40-aeb3-ebd8a1f50083",
+          "title": "Combo box",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test uno",
+              "fullTitle": "Combo box Test uno",
+              "timedOut": null,
+              "duration": 1568,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html');\ncy.title().should('eq', 'WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)');\ncy.get(\"#dropdowm-menu-1\").select('c#');\ncy.get(\"#dropdowm-menu-2\").select('testng').should(\"have.value\", \"testng\");\ncy.get(\"#dropdowm-menu-3\").select('jquery').contains(\"JQuery\");",
+              "err": {},
+              "uuid": "a8d933c9-fc25-44df-88a9-8f79349b8394",
+              "parentUUID": "7caa6071-7910-4a40-aeb3-ebd8a1f50083",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a8d933c9-fc25-44df-88a9-8f79349b8394"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1568,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "cb28fa1f-357b-4638-bbb3-135eaeae4b32",
+      "title": "",
+      "fullFile": "cypress\\integration\\demo_dos\\Custom_comans.js",
+      "file": "cypress\\integration\\demo_dos\\Custom_comans.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7eddb7e3-1fd5-4af1-abf1-cab23bfb626e",
+          "title": "Seleccionar Elementos de una tabla y de otros campos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Domicilio",
+              "fullTitle": "Seleccionar Elementos de una tabla y de otros campos Domicilio",
+              "timedOut": null,
+              "duration": 21462,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#id_entidad').select('Aguascalientes').should('have.value', '1');\ncy.get('#id_municipio').select('Asientos').should('have.value', '2');\ncy.get('#id_localidad').select('Adolfo Lopez Mateos').should('have.value', '2598');\ncy.get('#id_cp').should('be.visible').should('be.enabled').clear().type('07990');\ncy.get('#id_calle').should('be.visible').should('be.enabled').clear().type('Calle demo');\ncy.get('#id_numero_exterior').should('be.visible').should('be.enabled').clear().type('879');\ncy.get('#id_numero_interior').should('be.visible').should('be.enabled').clear().type('12');\ncy.wait(5000);\ncy.get('#id_salir_sipvi').should('be.visible').click({\n  force: true\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://10.16.3.36:8007/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 10.16.3.36:8007\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Seleccionar Elementos de un...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://10.16.3.36:8007/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 10.16.3.36:8007\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Seleccionar Elementos de un...`\n    at http://localhost:62517/__cypress/runner/cypress_runner.js:159076:23\n    at visitFailedByErr (http://localhost:62517/__cypress/runner/cypress_runner.js:158436:12)\n    at http://localhost:62517/__cypress/runner/cypress_runner.js:159075:11\n    at tryCatcher (http://localhost:62517/__cypress/runner/cypress_runner.js:10765:23)\n    at Promise._settlePromiseFromHandler (http://localhost:62517/__cypress/runner/cypress_runner.js:8700:31)\n    at Promise._settlePromise (http://localhost:62517/__cypress/runner/cypress_runner.js:8757:18)\n    at Promise._settlePromise0 (http://localhost:62517/__cypress/runner/cypress_runner.js:8802:10)\n    at Promise._settlePromises (http://localhost:62517/__cypress/runner/cypress_runner.js:8878:18)\n    at _drainQueueStep (http://localhost:62517/__cypress/runner/cypress_runner.js:5472:12)\n    at _drainQueue (http://localhost:62517/__cypress/runner/cypress_runner.js:5465:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:62517/__cypress/runner/cypress_runner.js:5481:5)\n    at Async.drainQueues (http://localhost:62517/__cypress/runner/cypress_runner.js:5351:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:62517/__cypress/tests?p=cypress\\integration\\demo_dos\\Custom_comans.js:169:8)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 10.16.3.36:8007\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)\n  ",
+                "diff": null
+              },
+              "uuid": "84ce4537-379d-4239-b342-a43f3df4de73",
+              "parentUUID": "7eddb7e3-1fd5-4af1-abf1-cab23bfb626e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "84ce4537-379d-4239-b342-a43f3df4de73"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 21462,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "012dd909-4c14-4bb2-b90e-7b488f9f2491",
+      "title": "",
+      "fullFile": "cypress\\integration\\demo_dos\\check.js",
+      "file": "cypress\\integration\\demo_dos\\check.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ee0e2142-a602-4f00-b4cf-cd995ab35e51",
+          "title": "Checkboxes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test uno",
+              "fullTitle": "Checkboxes Test uno",
+              "timedOut": null,
+              "duration": 1735,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html');\ncy.title().should('eq', 'WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)');\ncy.get('#checkboxes > :nth-child(1) > input').click();\ncy.get('#checkboxes > :nth-child(3) > input').should('have.value', 'option-2').click(); //validar\n//cy.get('#checkboxes > :nth-child(1)').check().should(\"be.checked\")",
+              "err": {},
+              "uuid": "735b162a-599c-4042-b32c-2edfa6cda4de",
+              "parentUUID": "ee0e2142-a602-4f00-b4cf-cd995ab35e51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test dos",
+              "fullTitle": "Checkboxes Test dos",
+              "timedOut": null,
+              "duration": 553,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html');\ncy.title().should('eq', 'WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)');\ncy.get(\"input[type='checkbox']\").check([\"option-1\", \"option-2\", \"option-3\", \"option-4\"]).should(\"be.checked\"); //selecciona las cuatro de un solo jalon",
+              "err": {},
+              "uuid": "42e6dfd0-336b-45a5-b2d5-62fc14086538",
+              "parentUUID": "ee0e2142-a602-4f00-b4cf-cd995ab35e51",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "735b162a-599c-4042-b32c-2edfa6cda4de",
+            "42e6dfd0-336b-45a5-b2d5-62fc14086538"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2288,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": "false",
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-20T00:41:45.585Z",
+    "end": "2021-02-20T00:41:54.022Z",
+    "duration": 8437,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1dc6ed52-ca47-4077-85fd-7a4790518ab0",
+      "title": "",
+      "fullFile": "cypress\\integration\\demo_dos\\Combo_autocomplite.js",
+      "file": "cypress\\integration\\demo_dos\\Combo_autocomplite.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "66683740-c580-4acc-adf4-dab4c4eb7f94",
+          "title": "Combo autocomplite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test uno",
+              "fullTitle": "Combo autocomplite Test uno",
+              "timedOut": null,
+              "duration": 2718,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.webdriveruniversity.com/Autocomplete-TextField/autocomplete-textfield.html');\ncy.title().should('eq', 'WebDriver | Contact Us');\ncy.get(\"#myInput\").type(\"A\");\ncy.get(\"#myInputautocomplete-list > * \").each(function ($el, index, $list) {\n  var prod = $el.text();\n  cy.log(prod);\n  if (prod === \"Avacado\") {\n    cy.get(\"#submit-button\").click();\n    cy.wait(1000);\n  }\n});",
+              "err": {},
+              "uuid": "8f70772f-15e9-4df4-88d5-b854841c030c",
+              "parentUUID": "66683740-c580-4acc-adf4-dab4c4eb7f94",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test dos",
+              "fullTitle": "Combo autocomplite Test dos",
+              "timedOut": null,
+              "duration": 4113,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.webdriveruniversity.com/Autocomplete-TextField/autocomplete-textfield.html');\ncy.title().should('eq', 'WebDriver | Contact Us');\ncy.get(\"#myInput\").type(\"Avacado\");\ncy.wait(1000);\ncy.get(\"#submit-button\").click();\ncy.url().should('include', 'Avacado').then(function () {\n  cy.get(\"#myInput\").type(\"Carrots\");\n  cy.wait(1000);\n  cy.get(\"#submit-button\").click();\n  cy.url().should('include', 'Carrots');\n});",
+              "err": {},
+              "uuid": "de197c8f-b70c-4369-ac77-ca74248332e8",
+              "parentUUID": "66683740-c580-4acc-adf4-dab4c4eb7f94",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8f70772f-15e9-4df4-88d5-b854841c030c",
+            "de197c8f-b70c-4369-ac77-ca74248332e8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6831,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": "false",
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
